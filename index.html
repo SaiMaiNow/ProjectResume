@@ -28,9 +28,9 @@
             <ul>
                 <li><button onclick="scrollNext('#about')">About</button></li>
                 <li><button onclick="scrollNext('#career')"></buttononclick>Career</button></li>
-                <li><button>Experience</button></li>
-                <li><button>Skills</button></li>
-                <li><button>Gallery</button></li>
+                <li><button onclick="scrollNext('#experience')">Experience</button></li>
+                <li><button onclick="scrollNext('#skills')">Skills</button></li>
+                <li><button id="nextPageBtn">Gallery</button></li>
             </ul>
         </div>
     </div>
@@ -40,7 +40,7 @@
                 <div class="group slide-right">
                     <h3 class="typewriter">Hello I'm Rachanon.</h3>
                     <p>I am a fullstack developer. I can write programs in various languages such as PHP, Lua, JS, Java,
-                        C#, C++, TypeScript, Python, Go, and MySQL. However, my main programming languages are Lua and
+                        C#, C++, TypeScript, Python, Go, and SQL. However, my main programming languages are Lua and
                         JS. I started
                         programming with the game GTAV, and it was the first thing that allowed me to earn money.</p>
                     <div class="button-contactor slide-right">
@@ -62,8 +62,8 @@
                 </div>
             </div>
         </div>
-        <div class="content-home-about" id="about">
-            <div class="content-about-box slide-bottom">
+        <div class="content-home-page" id="about">
+            <div class="content-no-idea-box slide-right">
                 <div class="content-image">
                     <img src="image/data_Image/ME2.png">
                 </div>
@@ -88,12 +88,154 @@
                 </div>
             </div>
         </div>
-        <div class="content-home-career" id="career">
-            
+        <div class="content-home-page" id="career">
+            <div class="content-no-idea-box slide-left">
+                <div class="content-details">
+                    <div class="deyails-cut">
+                        <h3>Career Objective</h3>
+                        <p>
+                            Aspiring to leverage my expertise in backend development to contribute to the design,
+                            development, and maintenance of critical systems. I am eager to take on challenging projects
+                            that require robust, scalable solutions, where I can apply my skills in creating reliable
+                            and efficient backend infrastructures that drive essential operations.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <img src="image/data_Image/IMG_1389.JPEG">
+                </div>
+            </div>
+        </div>
+        <div class="content-home-page" id="experience">
+            <div class="content-no-idea-box slide-right">
+                <div class="content-image">
+                    <img src="image/data_Image/IMG_1531.JPEG">
+                </div>
+                <div class="content-details">
+                    <div class="deyails-cut">
+                        <h3>Work Experience</h3>
+                        <h4>Math Problem-Solving Competition (Programming) – 2nd Place, Provincial Level</h4>
+                        <ul>
+                            <li>Competed in a math problem-solving competition where solutions were developed using
+                                programming languages.</li>
+                            <li>Achieved 2nd place at the provincial level, demonstrating strong analytical and coding
+                                skills to solve complex mathematical problems.</li>
+                        </ul>
+
+                        <h4>Freelance Developer</h4>
+                        <ul>
+                            <li>Provided freelance programming services, taking on various projects for clients.</li>
+                            <li>Developed custom solutions, primarily focusing on backend development, and utilized
+                                multiple programming languages based on project requirements.</li>
+                            <li>Gained hands-on experience in managing client expectations, delivering high-quality
+                                work, and meeting tight deadlines.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-home-page" id="skills">
+            <h4>Skills</h4>
+            <div class="content-skills-box slide-left">
+                <div class="group-skills">
+                    <div class="skills-box">
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar orange" percent="50"></div>
+                            </div>
+                            <h4>Html</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue" percent="60"></div>
+                            </div>
+                            <h4>Css</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar yellow" percent="76"></div>
+                            </div>
+                            <h4>Js</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue" percent="70"></div>
+                            </div>
+                            <h4>Ts</h4>
+                        </div>
+                    </div>
+                    <h4>Frontend</h4>
+                </div>
+                <div class="group-skills">
+                    <div class="skills-box">
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar purple" percent="56"></div>
+                            </div>
+                            <h4>Php</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue-sky" percent="34"></div>
+                            </div>
+                            <h4>Go</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar orange" percent="50"></div>
+                            </div>
+                            <h4>Sql</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar grey" percent="76"></div>
+                            </div>
+                            <h4>Py</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar red" percent="70"></div>
+                            </div>
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                    <h4>Backend</h4>
+                </div>
+                <div class="group-skills">
+                    <div class="skills-box">
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue" percent="70"></div>
+                            </div>
+                            <h4>C</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue" percent="86"></div>
+                            </div>
+                            <h4>C++</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar purple" percent="70"></div>
+                            </div>
+                            <h4>C#</h4>
+                        </div>
+                        <div class="group">
+                            <div class="bar-box">
+                                <div class="bar blue-z" percent="98"></div>
+                            </div>
+                            <h4>Lua</h4>
+                        </div>
+                    </div>
+                    <h4>Other</h4>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>Copyright © Rachanon 2024</p>
+    <footer class="slide-bottom">
+        <p>© 2024 Rachanon official</p>
     </footer>
     <script src="js/jquery-3.7.0.js"></script>
     <script src="js/c109ba2d75.js"></script>

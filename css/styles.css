@@ -1,7 +1,6 @@
 :root {
     --color-font-main: black;
     --color-font-long: rgb(147, 147, 147);
-    --color-hover-border: rgb(0, 110, 255);
 }
 
 body {
@@ -10,7 +9,8 @@ body {
     font-family: 'IBM Plex Sans Thai';
     font-style: normal;
     font-weight: 400;
-    background-color: rgba(242, 242, 242, 0.782);
+    background-color: black;
+    background-color: #f1f1f1;
 }
 
 .nav-bar {
@@ -138,9 +138,9 @@ body {
     flex-direction: column;
     width: 99vw;
     height: auto;
-    min-height: 90vh;
+    min-height: 100vh;
     backdrop-filter: blur(4px);
-    background-color: rgba(242, 242, 242, 0.782);
+    background-color: #f1f1f1;
     z-index: 0;
     overflow: hidden;
     /* background-color: aqua; */
@@ -185,7 +185,7 @@ body {
     margin-bottom: 5%;
 }
 
-.main-content>.content-home-1>.content-home-text-right>.group>p {
+.main-content>.content-home-1>.content-home-text-right>.group p {
     font-size: 80%;
 }
 
@@ -247,36 +247,41 @@ body {
     
 }
 
-.main-content > .content-home-about {
+.main-content > .content-home-page {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50rem;
 }
 
-
-.main-content > .content-home-about > .content-about-box {
+.main-content > .content-home-page > .content-skills-box,
+.main-content .content-no-idea-box {
     display: flex;
     width: 65%;
     height: 60%;
-    background-color: rgba(242, 242, 242, 0.782);
+    background-color: #f1f1f1;
     border-radius: 1vw;
     overflow: hidden;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11), 0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11)
 }
 
-.main-content > .content-home-about > .content-about-box > .content-image {
+.main-content .content-no-idea-box > .content-image {
     width: 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.main-content > .content-home-about > .content-about-box > .content-image > img {
+.main-content .content-no-idea-box > .content-image > img {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
+    object-fit: cover;
 }
 
-.main-content > .content-home-about > .content-about-box > .content-details {
+.main-content .content-no-idea-box > .content-details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,25 +289,84 @@ body {
     height: 100%;
 }
 
-.main-content > .content-home-about > .content-about-box > .content-details > .deyails-cut {
+.main-content .content-no-idea-box > .content-details > .deyails-cut {
     width: 90%;
     height: 90%;
 }
 
-.main-content > .content-home-about > .content-about-box > .content-details > .deyails-cut > h3 {
+.main-content .content-no-idea-box > .content-details > .deyails-cut > h3 {
     font-size: 2rem;
 }
 
-.main-content > .content-home-about > .content-about-box > .content-details > .deyails-cut > p {
+.main-content .content-no-idea-box > .content-details > .deyails-cut > h4 {
+    font-size: 100%;
+}
+
+.main-content .content-no-idea-box > .content-details > .deyails-cut li,
+.main-content .content-no-idea-box > .content-details > .deyails-cut > p {
     font-size: 80%;
 }
 
-.main-content > .content-home-career {
+.main-content > .content-home-page > .content-skills-box > h4 {
+    font-size: 1.3rem;
+    height: 10%;
+    margin: 0 auto;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills {
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > h4 {
+    background-color: rgb(175, 175, 175);
+    font-size: 100%;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > .skills-box {
     display: flex;
+    align-items: end;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 50rem;
+    height: 90%;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > .skills-box > .group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95%;
+    justify-content: center;
+    align-items: end;
+    background-color: rgb(209, 209, 209);
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > .skills-box > .group > h4 {
+    color: rgb(83, 83, 83);
+    font-size: 100%;
+    margin: 0 auto;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > .skills-box > .group > .bar-box {
+    width: 2rem;
+    height: 80%;
+    background-color: rgb(95, 95, 95);
+    margin: 0 auto;
+    border-radius: .5vw;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+
+.main-content > .content-home-page > .content-skills-box > .group-skills > .skills-box > .group > .bar-box > .bar {
+    width: 100%;
+    height: 0%;
+}
+
+.main-content > #skills > h4 {
+    font-size: 2rem;
 }
 
 .slide-right {
@@ -315,6 +379,38 @@ body {
 
 .slide-bottom {
     animation: slide-in-from-bottom 0.2s ease-out;
+}
+
+.orange {
+    background-color: #ec5a28;
+}
+
+.blue {
+    background-color: #306af1;
+}
+
+.yellow {
+    background-color: #f9dc43;
+}
+
+.purple {
+    background-color: #556096;
+}
+
+.blue-sky {
+    background-color: #74cedd;
+}
+
+.grey {
+    background-color: #a9a9a9;
+}
+
+.blue-z {
+    background-color: #080884;
+}
+
+.red {
+    background-color: red;
 }
 
 .typewriter {
@@ -363,7 +459,7 @@ body {
 
 @keyframes slide-in-from-bottom {
     0% {
-        transform: translateY(-20%);
+        transform: translateY(100%);
         opacity: 0;
     }
     100% {
@@ -380,4 +476,5 @@ body > footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f1f1f1;
 }
